@@ -14,6 +14,10 @@ public class Main {
          publishObserver.AttachObserver(defaultSubscriber);
          publishObserver.ChangeBookState("waiting for release");
          publishObserver.ChangeBookState("sales");
+
+         System.out.println();
+         Notification notification = new MessengerNotification(new GmailNotification(new SMSNotification(new BasicNotification())));
+         notification.assemble();
     }
 
 }
