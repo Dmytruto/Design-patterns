@@ -5,10 +5,10 @@ interface Strategy {
 
 public class PublishingHouse {
     private Strategy currentStratagy;
-    public void ChangeStratagy(Strategy newStratagy){
+    void ChangeStratagy(Strategy newStratagy){
         this.currentStratagy = newStratagy;
     }
-    public void publish(){
+    void publish(){
         String print = currentStratagy.printType();
         String cover = currentStratagy.coverType();
         System.out.println("Book has " + print + " and " + cover);
