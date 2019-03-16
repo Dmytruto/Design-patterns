@@ -18,6 +18,12 @@ public class Main {
          System.out.println();
          Notification notification = new MessengerNotification(new GmailNotification(new SMSNotification(new BasicNotification())));
          notification.assemble();
+
+
+         System.out.println();
+         BookFactory bookFactory = new BookFactory();
+         IBookFactory book = bookFactory.createBook("cheap");
+         book.getBook();
     }
 
 }
