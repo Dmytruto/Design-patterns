@@ -4,6 +4,15 @@ interface Strategy {
 }
 
 public class PublishingHouse {
+
+    private static PublishingHouse publishingHouse = null;
+
+    public static PublishingHouse GetInstanse(){
+        if(publishingHouse == null)
+            publishingHouse = new PublishingHouse();
+        return publishingHouse;
+    }
+
     private Strategy currentStratagy;
     void ChangeStratagy(Strategy newStratagy){
         this.currentStratagy = newStratagy;

@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-         PublishingHouse publishingHouse = new PublishingHouse();
+         PublishingHouse publishingHouse = PublishingHouse.GetInstanse();
          Strategy newStratagy = new exspensiveStratagy();
          publishingHouse.ChangeStratagy(newStratagy);
          publishingHouse.publish();
