@@ -1,7 +1,11 @@
 # Design-patterns
-Stratagy
+Strategy
+
 Observer
+
 Decorator
+
 Factory
+
 Singlton
 
