@@ -1,2 +1,7 @@
-# publishing-books-service
-publishing books
+# Design-patterns
+Stratagy
+Observer
+Decorator
+Factory
+Singlton
+
