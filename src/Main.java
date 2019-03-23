@@ -39,6 +39,16 @@ public class Main {
          state.printCurrentState();
          state.goToTheNextState();
          state.printCurrentState();
+         System.out.println();
+
+         Book newBook = new Book.BookBuilder()
+                 .SetCoverType("hardСardboard")
+                 .SetPrintType("offset")
+                 .SetPageSize("129 mm × 198 mm")
+                 .SetFontFamily("Times New Roman")
+                 .SetFontSize("12mm")
+                 .GetBook();
+         System.out.println(newBook);
     }
 
 }
