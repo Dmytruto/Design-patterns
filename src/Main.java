@@ -24,6 +24,21 @@ public class Main {
          BookFactory bookFactory = new BookFactory();
          IBookFactory book = bookFactory.createBook("cheap");
          book.getBook();
+
+
+         BookState state = new BookState();
+         state.printCurrentState();
+
+         state.goToTheNextState();
+         state.printCurrentState();
+         state.goToTheNextState();
+         state.printCurrentState();
+         state.goToTheNextState();
+         state.printCurrentState();
+         state.goToTheNextState();
+         state.printCurrentState();
+         state.goToTheNextState();
+         state.printCurrentState();
     }
 
 }
