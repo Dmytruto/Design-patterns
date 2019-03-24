@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
          PublishingHouse publishingHouse = PublishingHouse.GetInstanse();
          Strategy newStratagy = new exspensiveStratagy();
          publishingHouse.ChangeStratagy(newStratagy);
@@ -49,6 +49,17 @@ public class Main {
                  .SetFontSize("12mm")
                  .GetBook();
          System.out.println(newBook);
+
+
+         System.out.println();
+         AuthorChecker publisher = new AuthorChecker();
+         try {
+              publisher.passToVerify("Dmytro");
+              publisher.passToVerify("John Smith");
+         }
+         catch (Exception e){
+              System.out.println(e.getMessage());
+         }
     }
 
 }
