@@ -9,3 +9,9 @@ Factory
 
 Singlton
 
+Builder
+
+Proxy
+
+State
+
